@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/11 - suburban.unity
+    guid: 64f9d3ed199864904899ff45e6d0c64d
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/10 - apocalypse.unity
+    guid: 6f4a8e0b02db341dfbd3b02429834ab7
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/09 - dungeon.unity
+    guid: 913ca2df02fcc401e87be58bf87e646f
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/08 - japan.unity
+    guid: ec7c1be41d59f42cd95eacc962767e02
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/07 - wildwest.unity
+    guid: e758c97783a787845bde3dc4ffd4405f
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/06 - castle.unity
+    guid: 6b5559adca910d540a4fe673a1727602
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/05 - beach.unity
+    guid: 507890436ffd50a449a1c234671f52e1
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/04 - iceland.unity
+    guid: 3cad9c1a3d4d3a748b0e62b79bf51019
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/03 - skullIsland.unity
+    guid: 266d18a39c556cd4c8f810a63e9df0db
+  - enabled: 1
+    path: Assets/Low Poly Ultimate Pack/03 - skullIsland/03 - skullIsland - sub.unity
+    guid: 2ffd6454c422ff648b28c4c218e26df7
+  m_configObjects: {}

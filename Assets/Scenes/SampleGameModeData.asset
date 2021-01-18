@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256db3feef29bb644bed901b27f789b0, type: 3}
+  m_Name: SampleGameModeData
+  m_EditorClassIdentifier: 
+  EraList:
+  - m_Scene: {fileID: 102900000, guid: 6f4a8e0b02db341dfbd3b02429834ab7, type: 3}
+    eraDefinition: 2
+  - m_Scene: {fileID: 102900000, guid: 64f9d3ed199864904899ff45e6d0c64d, type: 3}
+    eraDefinition: 1
+  - m_Scene: {fileID: 102900000, guid: 266d18a39c556cd4c8f810a63e9df0db, type: 3}
+    eraDefinition: 3
+  - m_Scene: {fileID: 102900000, guid: 3cad9c1a3d4d3a748b0e62b79bf51019, type: 3}
+    eraDefinition: 4
+  - m_Scene: {fileID: 102900000, guid: 507890436ffd50a449a1c234671f52e1, type: 3}
+    eraDefinition: 5
+  - m_Scene: {fileID: 102900000, guid: 6b5559adca910d540a4fe673a1727602, type: 3}
+    eraDefinition: 6
+  - m_Scene: {fileID: 102900000, guid: e758c97783a787845bde3dc4ffd4405f, type: 3}
+    eraDefinition: 7
+  - m_Scene: {fileID: 102900000, guid: ec7c1be41d59f42cd95eacc962767e02, type: 3}
+    eraDefinition: 8
+  - m_Scene: {fileID: 102900000, guid: 913ca2df02fcc401e87be58bf87e646f, type: 3}
+    eraDefinition: 9

@@ -1,0 +1,20 @@
+{
+    "Dependencies": [
+        "GlobalObjectId_V1-1-5d9a1b19cb3403a46b3b40377a9f2a75-93214019566545601-0"
+    ],
+    "Components": [
+        {
+            "$type": "Unity.Build.Classic.ClassicBuildProfile, Unity.Build.Classic",
+            "$version": 1,
+            "Platform": "Windows",
+            "Configuration": 2,
+            "Incremental": false
+        },
+        {
+            "$type": "Unity.Build.Classic.ClassicScriptingSettings, Unity.Build.Classic",
+            "ScriptingBackend": 0,
+            "Il2CppCompilerConfiguration": 1,
+            "UseIncrementalGC": true
+        }
+    ]
+}
