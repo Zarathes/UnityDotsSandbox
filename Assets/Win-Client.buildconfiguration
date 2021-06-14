@@ -6,15 +6,20 @@
         {
             "$type": "Unity.Build.Classic.ClassicBuildProfile, Unity.Build.Classic",
             "$version": 1,
-            "Platform": "Windows",
-            "Configuration": 2,
-            "Incremental": false
+            "Platform": "win",
+            "Configuration": 3
         },
         {
             "$type": "Unity.Build.Classic.ClassicScriptingSettings, Unity.Build.Classic",
-            "ScriptingBackend": 0,
+            "ScriptingBackend": 1,
             "Il2CppCompilerConfiguration": 1,
             "UseIncrementalGC": true
+        },
+        {
+            "$type": "Unity.Build.Common.SceneList, Unity.Build",
+            "$version": 1,
+            "BuildCurrentScene": true,
+            "SceneInfos": []
         }
     ]
 }
