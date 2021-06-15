@@ -45,14 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c51c02bb20148469981f28480ff5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cycleDuration: 10
-  cycleLitDuration: 5
+  cycleDuration: 30
+  cycleLitDuration: 10
   cycleDormantBrightness: 0
   cycleLitBrightness: 1
-  synchroniseRadius: 2
-  neighborInfluenceDelta: 0.01
+  neighborInfluenceRadius: 3
+  neighborInfluenceDelta: 0.1
   fireflyDormantScale: 0
-  fireflyLitScale: 0.1
+  fireflyLitScale: 0.5
 --- !u!33 &5497089487328725116
 MeshFilter:
   m_ObjectHideFlags: 0

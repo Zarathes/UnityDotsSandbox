@@ -11,6 +11,7 @@ public struct FireFlySettings : IComponentData
     public float cycleLitDuration;
     public float cycleDormantBrightness;
     public float cycleLitBrightness;
+    public float neighborInfluenceRadius;
     public float neighborInfluenceDelta;
     public float fireflyDormantScale;
     public float fireflyLitScale;
@@ -24,10 +25,16 @@ public struct FireFlySettings : IComponentData
         cycleLitDuration = 1f,
         cycleDormantBrightness = 0.1f,
         cycleLitBrightness = 10f,
+        neighborInfluenceRadius = 3f,
         neighborInfluenceDelta = 0.01f,
         fireflyDormantScale = 0.1f,
         fireflyLitScale = 0.5f,
     };
+}
+
+public struct FireFlyState : IComponentData
+{
+    public uint currentCellRef;
 }
 
 public struct FireFlyLightingCycle : IComponentData
@@ -43,9 +50,15 @@ public struct FireFlyDestination : IComponentData
 public struct FireFlyHabitat : IComponentData
 {
     public Entity fireflyPrefabEntity;
-    public int fireflyCount;
     public float3 habitatCornerA;
     public float3 habitatCornerB;
     public float fireflyMinimumSpeed;
     public float fireflyMaximumSpeed;
+    public float3 cellSize;
+    public uint3 partitionDimentions;
+}
+
+public struct FireFlyHabitatCellPopulation : IBufferElementData
+{
+    public Entity Value;
 }

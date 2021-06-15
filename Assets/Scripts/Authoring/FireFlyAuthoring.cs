@@ -1,7 +1,5 @@
 ﻿// Author: Bart Schut
 using Unity.Entities;
-using Unity.Mathematics;
-using Unity.Physics;
 using Unity.Transforms;
 using UnityEngine;
 
@@ -18,7 +16,7 @@ public class FireFlyAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     public float cycleLitBrightness = 10f;
 
     [Tooltip("Radius that fireflies influence")]
-    public float synchroniseRadius = 3f;
+    public float neighborInfluenceRadius = 3f;
     public float neighborInfluenceDelta = 0.01f;
 
     [Tooltip("Scale when dormant")]
@@ -29,6 +27,7 @@ public class FireFlyAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
     {
         dstManager.AddComponentData(entity, new Scale() { Value = 0.05f});
+        dstManager.AddComponentData(entity, new FireFlyState());
         dstManager.AddComponentData(entity, new FireFlyLightingCycle());
         dstManager.AddComponentData(entity, new FireFlySettings() 
         {   
@@ -36,6 +35,7 @@ public class FireFlyAuthoring : MonoBehaviour, IConvertGameObjectToEntity
             cycleLitDuration = cycleLitDuration,
             cycleDormantBrightness = cycleDormantBrightness,
             cycleLitBrightness = cycleLitBrightness,
+            neighborInfluenceRadius = neighborInfluenceRadius,
             neighborInfluenceDelta = neighborInfluenceDelta,
             fireflyDormantScale = fireflyDormantScale,
             fireflyLitScale = fireflyLitScale
@@ -47,7 +47,7 @@ public class FireFlyAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, synchroniseRadius);
+        Gizmos.DrawWireSphere(transform.position, neighborInfluenceRadius);
     }
 #endif
 }

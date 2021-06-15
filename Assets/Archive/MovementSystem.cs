@@ -2,7 +2,7 @@
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-using Unity.Physics;
+//using Unity.Physics;
 
 public class MovementSystem : SystemBase
 {
